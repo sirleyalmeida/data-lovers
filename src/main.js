@@ -45,3 +45,6 @@ let tagsBr = function() {
 }
 
 tagsBr()
+
+// teste
+let teste = "teste"
