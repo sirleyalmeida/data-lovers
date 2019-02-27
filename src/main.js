@@ -1,5 +1,6 @@
 
 let showElementsTab = function(e) {
+    console.log(e.target.dataset.tabEnable);
     let tabSelect = e.target.dataset.tabEnable;
     console.log(tabSelect);
     let jobBr = document.querySelector("#jobBr");
@@ -23,7 +24,7 @@ let showElementsTab = function(e) {
         educationBr.style.display = "block";
     }
 }
-showElementsTab()
+
 let tagsBr = function() {
     let jobBr = document.querySelector("#jobBr");
     console.log(jobBr);
@@ -37,11 +38,9 @@ let tagsBr = function() {
     educationBr.style.display = "none";
 
     let elementsTab = document.querySelectorAll(".tab");
-    for (let i in elementsTab) {
-        console.log(i);
-        console.log( elementsTab[i]);
+    for (let i of elementsTab) {
         elementsTab[i].addEventListener("click", showElementsTab);
     }
 }
 
-tagsBr()
+tagsBr();
