@@ -1,12 +1,6 @@
 body {
     margin: 0px;
 }
-/*
-aside { 
-    display: block;
-}
-  */
-
 
 .container-nav {
     background-color: #20B2AA;
@@ -104,7 +98,7 @@ aside {
    height: auto
 }
 
-.container-brazil {
+.container-tab-sections {
     background-color: white;
     display: flex;
     margin: auto;
@@ -113,12 +107,12 @@ aside {
     border-bottom: 1px solid black;
 }
 
-.container-tab-br {
+.container-tab {
     width: 200px;
     margin: 0 auto;
     display: block;
 }
-
+/* 
 .container-mexico {
     background-color: white;
     display: flex;
@@ -161,7 +155,7 @@ aside {
     width: 200px;
     margin: 0 auto;
     display: block;
-}
+} */
 
 .flags-sections {
     width: 150px;
