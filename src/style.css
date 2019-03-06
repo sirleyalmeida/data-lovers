@@ -1,50 +1,121 @@
 body {
     margin: 0px;
+    font-family: 'Muli', sans-serif;
+   
+}
+
+.background-grey{
+    border-top: 1px solid darkgray;
+    border-bottom: 1px solid darkgray;
+    background-color:#E8E8E8;
+}
+
+.background-white{
+    background-color: #F5F5F5;
 }
 
 .container-nav {
-    background-color: #20B2AA;
+    background-color: rgba(0, 0, 0, 0.8);
     display: flex;
+    flex-wrap: wrap;
     margin: auto;
     list-style: none;
+    align-items: center;
     justify-content: space-around;
-    padding: 2vw;
+    padding: 1vw;
+    margin-bottom: 3vw;
 }
   
+
 .item-nav-left {
     font-size: 25px;
+    color: white;
 }
   
 .item-nav-right {
     font-size: 20px;
     cursor: pointer;
+    color: white;
 }
 
 .item-nav-right a:hover  {
-  background-color: #008B8B ;
+    text-decoration: none;
+    color:#7FFFD4;
 }
 
-.container-article {
+.container-Maps {
+    width: 1200px;
+    height: 400px;
+    background-image: url("img-flags/mapa.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat; 
+    margin: 2em; 
+    padding-top: 4em;
+    padding-bottom: 4em;   
+}
+
+.container-Maps .text-center{
+    width: 80%;
+    height: auto;
+    margin: auto;
+    align-items: center;
+    font-size: 2em;    
     text-align: center;
 }
-  
-.countries {
-    margin: 0;
-    text-align: center;
-    background-color: #E0FFFF;
-    padding-top: 20px;
-    padding-bottom: 0px;
+
+.text-center
+{
+    text-align: center!important;
 }
   
-.container-flags {
-    padding: 5vw;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: #E0FFFF;
+
+
+.container {       
+    margin: auto;
+    height: auto;
+    width: 100%;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    max-width: 1140px;
+    box-sizing: border-box;
    
 }
+
+#mainSection {
+    padding-top: 5rem;
+    padding-bottom: 5rem; 
+  }
+
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-right: 40px;
+    margin-left: 40px;
+    justify-content: space-around;  
+}
+
+.column-text{    
+    max-width: 45%;
+    text-align: justify;
+}
+
+
+
+
+
+/* .countries {
+    margin: 0;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 0px;
+} */
+
+  
+
   
 .flags-list {
     width: 40%;
@@ -63,6 +134,21 @@ body {
     border: 5px outset #E0FFFF;
     cursor: pointer;
 }
+
+
+
+
+
+ 
+  
+  .text-uppercase {
+    text-transform: uppercase;
+  } 
+   
+
+
+
+
 
 .container-btn {
     width: 60%;
@@ -98,14 +184,7 @@ body {
    height: auto
 }
 
-.container-tab-sections {
-    background-color: white;
-    display: flex;
-    margin: auto;
-    justify-content: space-between;
-    height: 300px;
-    border-bottom: 1px solid black;
-}
+
 
 .container-tab {
     width: 200px;
@@ -160,6 +239,7 @@ body {
 .flags-sections {
     width: 150px;
     height: 120px;
-    border: 1px solid #20B2AA
+    border: 1px solid #20B2AA;
+    
 }
 
