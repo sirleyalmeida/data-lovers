@@ -77,20 +77,20 @@ let showElementsTab = (e) => {
     }
 }
 
-let tagsBr = () => {
-    let jobBr = document.querySelector("#jobBr");
-    let unemployedBr = document.querySelector("#unemployedBr");
-    let educationBr = document.querySelector("#educationBr");
+// let tagsBr = () => {
+//     let jobBr = document.querySelector("#jobBr");
+//     let unemployedBr = document.querySelector("#unemployedBr");
+//     let educationBr = document.querySelector("#educationBr");
 
-    jobBr.style.display = "none";
-    unemployedBr.style.display = "none";
-    educationBr.style.display = "none";
+//     jobBr.style.display = "none";
+//     unemployedBr.style.display = "none";
+//     educationBr.style.display = "none";
 
-    let elementsTab = document.querySelectorAll(".tab");
-    for (let i in elementsTab) {
-        elementsTab[i].addEventListener("click", showElementsTab)
-    }
-};
+//     let elementsTab = document.querySelectorAll(".tab");
+//     for (let i in elementsTab) {
+//         elementsTab[i].addEventListener("click", showElementsTab)
+//     }
+// };
 
-tagsBr();
+// tagsBr();
 
