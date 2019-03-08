@@ -1,13 +1,12 @@
 body {
     margin: 0px;
-    font-family: 'Muli', sans-serif;
-   
+    font-family: 'Muli', sans-serif;  
 }
 
 .background-grey{
-    border-top: 1px solid darkgray;
-    border-bottom: 1px solid darkgray;
-    background-color:#E8E8E8;
+    /* border-top: 1px solid darkgray; */
+    /* border-bottom: 1px solid darkgray; */
+    background-color:#f2f2f2;
 }
 
 .background-white{
@@ -16,20 +15,21 @@ body {
 
 .container-nav {
     background-color: rgba(0, 0, 0, 0.8);
-    display: flex;
-    flex-wrap: wrap;
+    padding: 1vw;
     margin: auto;
+    margin-bottom: 3vw;
+    display: flex;
+    /* flex-wrap: wrap; */
     list-style: none;
     align-items: center;
-    justify-content: space-around;
-    padding: 1vw;
-    margin-bottom: 3vw;
+    justify-content: space-evenly;
+
 }
-  
 
 .item-nav-left {
     font-size: 25px;
     color: white;
+    width: 50%;
 }
   
 .item-nav-right {
@@ -43,79 +43,156 @@ body {
     color:#7FFFD4;
 }
 
-.container-Maps {
-    width: 1200px;
-    height: 400px;
-    background-image: url("img-flags/mapa.png");
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat; 
-    margin: 2em; 
-    padding-top: 4em;
-    padding-bottom: 4em;   
+.thematic {
+  text-align: center;
+  font-size: 15px;
 }
 
-.container-Maps .text-center{
-    width: 80%;
+.container-maps {
+    max-width: 100%;
+    height: auto;
+    background-image: url("img-flags/mapa.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center; 
+    background-origin: content-box;
+    margin: 1em;
+    display: flex;
+    align-items: flex-end;
+    /* width: 1200px;
+    height: 400px; */
+    /* height: 100%;
+    width: 100%; */
+    /* background-size: cover; */
+    /* background-position: 100%; */
+    /* transition: all 0.5s ease; */  
+    /* background-size: cover;  */  
+     /*padding-top: 4em;
+    padding-bottom: 4em;
+    cursor: zoom-in; 
+    justify-content: center; */
+ 
+} 
+
+/* .container-maps:hover
+{
+  transform: scale(1.2);
+} */
+
+/* .inner-div {
+    height: 50vh;
+    overflow: hidden; 
+} */
+
+.list-map ul {
+    font-size: 20px;
+    list-style: none;
+    width: 100px;
+    height: 100px; 
+    margin: auto;
+    align-self: flex-end;
+    padding-top: 14vw;
+    padding-left: 25vw;
+    cursor: pointer;
+    /* width: 80%;
     height: auto;
     margin: auto;
     align-items: center;
-    font-size: 2em;    
+    font-size: 25px;    
+    text-align: center; */
+}
+
+.list-map li {
+    padding-bottom: 4px;
+}
+
+.list-map li:hover  {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.brazil {
+    color: #ffaf1a;
+}
+
+.mexico {
+    color: #00cc00;
+}
+
+.chile {
+    color: #1b61e4;
+}
+
+.peru {
+    color: #ff1a1a;
+}
+
+.container-symbols {
+    font-size: 30px;
+    color: #333333 ;
+    border-radius: 50%;
+    border: 2px solid #bfbfbf;
+    width: 12vw;
+    height: 22vh;
+    margin-left: 2%;
+    display: flex;
+    align-items: center;
+}
+
+.symbol {
     text-align: center;
 }
 
-.text-center
+
+
+/* .text-center
 {
     text-align: center!important;
-}
+} */
   
-
-
-.container {       
+.container-about {       
     margin: auto;
     height: auto;
-    width: 100%;
     width: 100%;
     padding-right: 15px;
     padding-left: 15px;
     max-width: 1140px;
-    box-sizing: border-box;
-   
-}
-
-#mainSection {
     padding-top: 5rem;
     padding-bottom: 5rem; 
-  }
+    text-align: center;
+    /* box-sizing: border-box;   */
+}
 
+/* #mainSection {
+    padding-top: 5rem;
+    padding-bottom: 5rem; 
+  } */
 
 .row {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 20px;
+    justify-content: space-around;
+    align-items: center;
+    /* margin-top: 20px;
     margin-right: 40px;
-    margin-left: 40px;
-    justify-content: space-around;  
+    margin-left: 40px; */
 }
 
-.column-text{    
+.column-text p {
+ padding-left: 20px;
+ font-size: 20px;
+}
+
+.column-text {    
     max-width: 45%;
     text-align: justify;
 }
-
-
-
-
-
 /* .countries {
     margin: 0;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 0px;
 } */
-
-  
-
   
 .flags-list {
     width: 40%;
@@ -134,21 +211,10 @@ body {
     border: 5px outset #E0FFFF;
     cursor: pointer;
 }
-
-
-
-
-
- 
   
-  .text-uppercase {
+.text-uppercase {
     text-transform: uppercase;
-  } 
-   
-
-
-
-
+} 
 
 .container-btn {
     width: 60%;
@@ -183,8 +249,6 @@ body {
    width: 70%;
    height: auto
 }
-
-
 
 .container-tab {
     width: 200px;
@@ -239,7 +303,6 @@ body {
 .flags-sections {
     width: 150px;
     height: 120px;
-    border: 1px solid #20B2AA;
-    
+    border: 1px solid #20B2AA;   
 }
 
