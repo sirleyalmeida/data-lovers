@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0px;
     font-family: 'Muli', sans-serif;  
@@ -16,14 +20,25 @@ body {
 .container-nav {
     background-color: rgba(0, 0, 0, 0.8);
     padding: 1vw;
-    margin: auto;
+    margin: 0;
     margin-bottom: 3vw;
     display: flex;
     /* flex-wrap: wrap; */
     list-style: none;
     align-items: center;
     justify-content: space-evenly;
+    z-index: 9999; 
+    position: fixed; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* overflow: auto; */
+    text-decoration: none;
+}
 
+.container-nav a {
+    text-decoration: none;
+    color: white;
 }
 
 .item-nav-left {
@@ -36,6 +51,7 @@ body {
     font-size: 20px;
     cursor: pointer;
     color: white;
+    transition: all .4s;
 }
 
 .item-nav-right a:hover  {
@@ -46,6 +62,7 @@ body {
 .thematic {
   text-align: center;
   font-size: 15px;
+  padding-top: 80px;
 }
 
 .container-maps {

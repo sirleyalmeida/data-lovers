@@ -2,42 +2,50 @@ window.onload = function () {
 
 };
 
-let getDataPeru = () => {
-    return WORLDBANK.PER["indicators"];
-}
+// let getDataPeru = () => {
+//     return WORLDBANK.PER["indicators"];
+// }
 
-getDataPeru();
-// console.log(getDataPeru());
+// getDataPeru();
+// // console.log(getDataPeru());
 
-let getDataChile = () => {
-    return WORLDBANK.CHL["indicators"];
-}
-getDataChile()
+// let getDataChile = () => {
+//     return WORLDBANK.CHL["indicators"];
+// }
+// getDataChile()
 
-let getDataMexico = () => {
-    return WORLDBANK.MEX["indicators"];
-}
-getDataMexico()
+// let getDataMexico = () => {
+//     return WORLDBANK.MEX["indicators"];
+// }
+// getDataMexico()
 
-let getDataBrazil = () => {
-    return WORLDBANK.BRA["indicators"];
-};
-getDataBrazil()
-console.log(getDataBrazil());
+// let getDataBrazil = () => {
+//     return WORLDBANK.BRA["indicators"];
+// };
+// getDataBrazil()
+// console.log(getDataBrazil());
 
 let getBR = WORLDBANK.BRA["indicators"];
 console.log(getBR)
+
 
 let mapDataBrazil = getBR.filter(({
     countryCode, countryName, data, indicatorCode, indicatorName,
 }) => [`${countryName} ${data} ${indicatorName} `, countryCode - indicatorCode]);
 console.log(mapDataBrazil);
 
+let objetoBrazil = JSON.stringify(mapDataBrazil);
+console.log(objetoBrazil)
+
+let teste = mapDataBrazil[109]["indicatorName"];
+console.log(teste)
 
 
-let arrBr = mapDataBrazil.map(({ data, }) => [`${data}`]);
-console.log(arrBr)
+// let arrBr = mapDataBrazil.map(({ data, }) => [`${data}`]);
+// console.log(arrBr)
 
+// let Brazil = JSON.parse(arrBr);
+// console.log(objetoBrazil)
 
 // let showElementsTab = (e) => {
 //     let tabSelect = e.target.dataset.tabenable;
@@ -76,4 +84,3 @@ console.log(arrBr)
 // };
 
 // tagsBr();
-
