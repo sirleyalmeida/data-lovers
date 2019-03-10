@@ -14,7 +14,7 @@ body {
 }
 
 .background-white{
-    background-color: #F5F5F5;
+    background-color: white;
 }
 
 .container-nav {
@@ -62,12 +62,14 @@ body {
 .thematic {
   text-align: center;
   font-size: 15px;
-  padding-top: 80px;
+  padding-top: 6%;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 
 .container-maps {
-    max-width: 100%;
-    height: auto;
+    width: 100vw;
+    height: 70vh;
     background-image: url("img-flags/mapa.png");
     background-repeat: no-repeat;
     background-size: contain;
@@ -78,28 +80,13 @@ body {
     align-items: flex-end;
     /* width: 1200px;
     height: 400px; */
-    /* height: 100%;
-    width: 100%; */
-    /* background-size: cover; */
-    /* background-position: 100%; */
-    /* transition: all 0.5s ease; */  
-    /* background-size: cover;  */  
-     /*padding-top: 4em;
-    padding-bottom: 4em;
-    cursor: zoom-in; 
-    justify-content: center; */
- 
-} 
+}
 
-/* .container-maps:hover
-{
-  transform: scale(1.2);
-} */
-
-/* .inner-div {
-    height: 50vh;
-    overflow: hidden; 
-} */
+.list-map {
+    display: flex;
+    align-items: center;
+    padding-left: 25vw;
+}
 
 .list-map ul {
     font-size: 20px;
@@ -108,15 +95,7 @@ body {
     height: 100px; 
     margin: auto;
     align-self: flex-end;
-    padding-top: 14vw;
-    padding-left: 25vw;
     cursor: pointer;
-    /* width: 80%;
-    height: auto;
-    margin: auto;
-    align-items: center;
-    font-size: 25px;    
-    text-align: center; */
 }
 
 .list-map li {
@@ -146,12 +125,9 @@ body {
 
 .container-symbols {
     font-size: 30px;
-    color: #333333 ;
-    border-radius: 50%;
-    border: 2px solid #bfbfbf;
+    color: #333333;
     width: 12vw;
     height: 22vh;
-    margin-left: 2%;
     display: flex;
     align-items: center;
 }
@@ -159,13 +135,6 @@ body {
 .symbol {
     text-align: center;
 }
-
-
-
-/* .text-center
-{
-    text-align: center!important;
-} */
   
 .container-about {       
     margin: auto;
@@ -177,13 +146,7 @@ body {
     padding-top: 5rem;
     padding-bottom: 5rem; 
     text-align: center;
-    /* box-sizing: border-box;   */
 }
-
-/* #mainSection {
-    padding-top: 5rem;
-    padding-bottom: 5rem; 
-  } */
 
 .row {
     display: flex;
@@ -204,122 +167,36 @@ body {
     max-width: 45%;
     text-align: justify;
 }
-/* .countries {
-    margin: 0;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 0px;
-} */
-  
-.flags-list {
-    width: 40%;
-    height: auto;
-    margin: 0;
-    display: flex;
-    justify-content: center;
+
+.container-comparative {
+ text-align: center;
 }
 
-.flags {
-    width: 40%;
-    height: auto;
-    margin: auto;
-    margin-right: 0px;
-    margin-left: 0px;
-    border: 5px outset #E0FFFF;
-    cursor: pointer;
-}
-  
-.text-uppercase {
-    text-transform: uppercase;
-} 
-
-.container-btn {
-    width: 60%;
-    color: blue;
-    display: flex;
-    margin: auto;
-    justify-content: flex-start;
-    border-bottom: 1px solid black;
-}
-
-.tab {
-    color: #191970;
-    background-color: #F5F5F5;
-    border-radius: 7%;
-    border-bottom: none;
-    border: none;
-    padding: 15px;
-    width: 100px;
-    font-size: 12px;
+.container-indicator {
     text-align: center;
 }
 
-.container-btn li {
-    list-style: none;
-    display: inline-block;
-    padding: 10px;
-    padding-bottom: 0px;
+.container-indicator table {
+    text-align: center;
+    margin: 100px;
+    font-size: 20px;
 }
 
-.nav-btn {
-   border-bottom: 1 px solid blue;
-   width: 70%;
-   height: auto
+.container-indicator select {
+    text-align: center;
+    font-size: 18px;
 }
 
-.container-tab {
-    width: 200px;
-    margin: 0 auto;
-    display: block;
-}
-/* 
-.container-mexico {
-    background-color: white;
-    display: flex;
-    margin: auto;
-    justify-content: space-between;
-    height: 300px;
-    border-bottom: 1px solid black;
+.btn-indicators {
+    border-radius: 5px;
+    background-color:rgb(3, 3, 22);
+    color: white;
+    padding: 10px 15px;
+    font-size: 15px;
+    transition-duration: 0.4s;
 }
 
-.container-tab-mex {
-    width: 200px;
-    margin: 0 auto;
-    display: block;
+.btn-indicators:hover {
+    background-color: rgb(49, 156, 81);
+    color: rgb(3, 3, 22);
 }
-
-.container-chile {
-    background-color: white;
-    display: flex;
-    margin: auto;
-    justify-content: space-between;
-    height: 300px;
-    border-bottom: 1px solid black;
-}
-
-.container-tab-cl {
-    width: 200px;
-    margin: 0 auto;
-    display: block;
-}
-
-.container-peru {
-    background-color: white;
-    display: flex;
-    margin: auto;
-    justify-content: space-between;
-    height: 300px;
-    border-bottom: 1px solid black;
-}
-.container-tab-pe {
-    width: 200px;
-    margin: 0 auto;
-    display: block;
-} */
-
-.flags-sections {
-    width: 150px;
-    height: 120px;
-    border: 1px solid #20B2AA;   
-}
-

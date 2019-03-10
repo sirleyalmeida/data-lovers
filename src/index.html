@@ -18,7 +18,8 @@
         <li class="item-nav-left"><a>Indicadores de Desenvolvimento</a></li>
         <li class="item-nav-right"><a href="#paises">Países</a></li>
         <li class="item-nav-right"><a href="#introducao">Introdução</a></li>
-        <li class="item-nav-right"><a href="">Comparativos</a></li>
+        <li class="item-nav-right"><a href="#indicadores">Pesquisar</a></li>
+        <li class="item-nav-right"><a href="#comparativos">Comparativos</a></li>
       </ul>
     </nav>
   </header>
@@ -31,7 +32,7 @@
     </div>
   </section>
   <section class="container-maps">
-    <section class="list-map">
+    <div class="list-map">
       <!-- <h1>Índices de empregabilidade das mulheres em relação a diferentes níveis de escolaridade no Brasil, Chile,
           Perú e México </h1> -->
       <ul>
@@ -40,20 +41,19 @@
         <li class="peru"><i class="fas fa-map-marker-alt">Perú</i></li>
         <li class="chile"><i class="fas fa-map-marker-alt">Chile</i></li>
       </ul>
-    </section>
-    <section class="container-symbols">
+      <div class="container-symbols">
+        <div class="symbol">
+          <i class="fas fa-mars"></i>
+          <i class="fas fa-venus"></i>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="container-symbols">
       <div class="symbol">
         <i class="fas fa-mars"></i>
         <i class="fas fa-venus"></i>
-        <!-- <i class="fas fa-percent"></i>
-        <i class="fas fa-folder"></i>
-        <i class="fas fa-chart-bar"></i>
-        <i class="fas fa-book"></i>
-        <i class="fas fa-user-graduate"></i>
-        <i class="fas fa-equals"></i>
-        <i class="fas fa-not-equal"></i> -->
       </div>
-    </section>
+    </div> -->
   </section>
 
   <!--Introdução-->
@@ -90,10 +90,74 @@
       </div>
     </div>
   </section>
+  <!-- Itens da tabela para filtro -->
+  <section id="indicadores" class="text-center background-white">
+    <div id="mainSection" class="container-indicator">
+      <h2 class="text-uppercase">Pesquisar</h2>
+      <table>
+        <caption>Escolha o País, o Ano e o Indicador</caption>
+        <tr>
+          <td>
+            <select>
+              <option>País</option>
+              <option>México</option>
+              <option>Brasil</option>
+              <option>Perú</option>
+              <option>Chile</option>
+            </select>
+          </td>
+          <td>
+            <select>
+              <option>Ano</option>
+              <option>2008</option>
+              <option>2009</option>
+              <option>2010</option>
+              <option>2011</option>
+              <option>2012</option>
+              <option>2013</option>
+              <option>2014</option>
+              <option>2015</option>
+              <option>2016</option>
+              <option>2017</option>
+            </select>
+          </td>
+          <td>
+            <select>
+              <option>Indicador</option>
+              <option>Força de trabalho com o ensino primário (% do total)</option>
+              <option>Força de trabalho com o ensino primário, do sexo feminino (% da força de trabalho feminina)
+              </option>
+              <option>Força de trabalho com o ensino primário, do sexo masculino (% da força de trabalho masculina)
+              </option>
+              <option>Força de trabalho com formação intermédia (% do total)</option>
+              <option>Força de trabalho com formação intermédia, do sexo feminino (% da força de trabalho feminina)
+              </option>
+              <option>Força de trabalho com formação intermediária, do sexo masculino (% da força de trabalho
+                masculina)</option>
+              <option>Força de trabalho com formação avançada (% do total)</option>
+              <option>Força de trabalho com formação avançada, do sexo feminino (% da força de trabalho feminina)
+              </option>
+              <option>Força de trabalho com formação avançada, do sexo masculino (% da força de trabalho masculina)
+              </option>
+            </select>
+          </td>
+          <td>
+            <button type="submit" class="btn-indicators">Enviar</button>
+          </td>
+        </tr>
+      </table>
+      <!-- <div class="row">
+        <div class="column-text">
+        </div>
+        <div class="column-text">
+        </div>
+      </div> -->
+    </div>
+  </section>
   <!--- aqui irei colocar os graficos--->
-  <section class="text-center background-white">
-    <div id="mainSection" class="container">
-      <!-- <h2 class="text-uppercase">About</h2> -->
+  <section id="comparativos" class="text-center background-grey">
+    <div id="mainSection" class="container-comparative">
+      <h2 class="text-uppercase">Comparativos</h2>
       <div class="row">
         <div class="column-text">
           <p>
@@ -119,7 +183,6 @@
       </div>
     </div>
   </section>
-  <!--Indicadores do México-->
 
   <footer>
   </footer>
