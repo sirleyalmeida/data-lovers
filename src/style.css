@@ -57,7 +57,7 @@ body {
 .item-nav-right a:hover  {
     text-decoration: none;
     color:#7FFFD4;
-}
+} 
 
 .thematic {
   text-align: center;
@@ -68,14 +68,15 @@ body {
 }
 
 .container-maps {
-    width: 100vw;
+    width: 90vw;
     height: 70vh;
+    margin: auto;
     background-image: url("img-flags/mapa.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center; 
     background-origin: content-box;
-    margin: 1em;
+    margin-bottom: 1%;
     display: flex;
     align-items: flex-end;
     /* width: 1200px;
@@ -85,7 +86,7 @@ body {
 .list-map {
     display: flex;
     align-items: center;
-    padding-left: 25vw;
+    padding-left: 20%;
 }
 
 .list-map ul {
@@ -168,35 +169,47 @@ body {
     text-align: justify;
 }
 
-.container-comparative {
- text-align: center;
-}
-
 .container-indicator {
     text-align: center;
 }
 
 .container-indicator table {
     text-align: center;
-    margin: 100px;
     font-size: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .container-indicator select {
     text-align: center;
     font-size: 18px;
+    background-color: #f2f2f2;
+    border-radius: 3px;
+    border-bottom: 1px solid rgb(3, 3, 22)
 }
 
 .btn-indicators {
     border-radius: 5px;
     background-color:rgb(3, 3, 22);
     color: white;
-    padding: 10px 15px;
+    padding: 10px 12px;
     font-size: 15px;
     transition-duration: 0.4s;
 }
 
 .btn-indicators:hover {
-    background-color: rgb(49, 156, 81);
+    background-color: #84fb84;
     color: rgb(3, 3, 22);
 }
+
+.post-indicators {
+   max-width: 1140px;
+   width: 100px;
+   height: 100px;   
+}
+
+.container-comparative {
+    text-align: center;
+}
+
