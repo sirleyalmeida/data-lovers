@@ -546,3 +546,5 @@ myChart = new Chart(ctxPER, {
         }
     }
 });
+
+// let datas = filterItens;
