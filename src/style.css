@@ -17,6 +17,10 @@ body {
     background-color: white;
 }
 
+nav {
+    display: block;
+}
+
 .container-nav {
     background-color: rgba(0, 0, 0, 0.8);
     padding: 1vw;
@@ -87,6 +91,7 @@ body {
     display: flex;
     align-items: center;
     padding-left: 20%;
+  
 }
 
 .list-map ul {
@@ -101,26 +106,28 @@ body {
 
 .list-map li {
     padding-bottom: 4px;
+    transition: all .4s;
 }
 
-.list-map li:hover  {
+.list-map li a:hover  {
     text-decoration: none;
     color: rgba(0, 0, 0, 0.8);
 }
 
-.brazil {
+.brazil a {
     color: #ffaf1a;
+    
 }
 
-.mexico {
+.mexico a {
     color: #00cc00;
 }
 
-.chile {
+.chile a {
     color: #1b61e4;
 }
 
-.peru {
+.peru a {
     color: #ff1a1a;
 }
 
@@ -193,7 +200,7 @@ body {
     border-radius: 5px;
     background-color:rgb(3, 3, 22);
     color: white;
-    padding: 10px 12px;
+    padding: 5px 7px;
     font-size: 15px;
     transition-duration: 0.4s;
 }
@@ -211,10 +218,11 @@ body {
 
 .container-comparative {
     text-align: center;
+    padding: 2% 5%;
 }
 
 .div-graphics {
-    padding: 20px;
+    padding-bottom: 5%;
 
 }
 

@@ -1,183 +1,19 @@
-// window.onload = function () {
+let prevScrollpos = window.pageYOffset;
+window.onscroll = function () {
+    let currentScrollPos = window.pageYOffset;
+    if (prevScrollpos > currentScrollPos) {
+        document.querySelector(".container-nav").style.top = "0";
+    } else {
+        document.querySelector(".container-nav").style.top = "100%";
+    }
+    prevScrollpos = currentScrollPos;
+}
 
-// };
-
-// let getDataMexico = () => {
-//     return WORLDBANK.MEX["indicators"];
-// }
-// getDataMexico()
-
-// let getDataBrazil = () => {
-//     return WORLDBANK.BRA["indicators"];
-// };
-// getDataBrazil()
-// console.log("indicadores do Brasil", getDataBrazil());
-
-// let getDataPeru = () => {
-//     return WORLDBANK.PER["indicators"];
-// }
-// getDataPeru();
-// // console.log(getDataPeru());
-
-// let getDataChile = () => {
-//     return WORLDBANK.CHL["indicators"];
-// }
-// getDataChile()
-
-
-// function showDataBrazil() {
-//     let indicatorsBrazil = document.querySelector(".post-indicators");
-//     let mapDataBrazil = getDataBrazil().filter(({
-//         countryCode, countryName, data, indicatorCode, indicatorName,
-//     }) => [`${countryName} ${data} ${indicatorName} `, countryCode - indicatorCode]);
-//     console.log(mapDataBrazil);
-
-//     let objetoBrazil = JSON.stringify(mapDataBrazil);
-//     console.log(objetoBrazil)
-
-//     objetoBrazil.innerHTML = `
-//     ${mapDataBrazil.map(({ indicatorName }) => [`
-//      <div class="post-indicators">
-//        <p class="post-indicators-countries">${indicatorName["indicatorName"]}</p>
-//      </div>
-//     `]).join("")}
-// `
-// }
-// showDataBrazil();
-
-// console.log("Dados do Brasil", showDataBrazil())
-
-// let getBR = WORLDBANK.BRA["indicators"];
-// console.log(getBR)
-
-// let newteste = JSON.stringify(getBR[100]["data"]);
-// console.log(newteste)
-
-// let mapDataBrazil = getBR
-//     .filter(({
-//         countryCode, countryName, data, indicatorCode, indicatorName,
-//     }) => [`${countryName} ${data} ${indicatorName} `, countryCode - indicatorCode])
-
-//     .map(({ data }) => ({ values: data }))
-//     .map(({ values }) => ({ str: values }));
-
-// console.log(mapDataBrazil);
-
-// let test = getBR
-//     .filter(({ data, }) => [`${data} `]);
-//     .map(data => ({ value: data }))
-// .filter(obj => obj.value);
-
-
-// .map(obj => obj.value)
-// .filter(obj => obj.value >= "2008");
-// .map(indicatorName => ({ values: indicatorName }))
-// .filter(obj => obj.values = "Fuerza laboral con educación intermedia (% del total)");
-// console.log("Isso", test);
-// console.log("Isso tá estratificado", JSON.stringify(test));
-
-// let pesquisa = (country, year, indicator) => {
-
-// };
-
-// let filter2 = getBR.filter(data => data >= "2008");
-// console.log(filter2);
-
-
-
-// let mapDataBrazil = getBR.filter(({
-//     countryCode, countryName, data, indicatorCode, indicatorName,
-// }) => [`${countryName} ${data} ${indicatorName} `, countryCode - indicatorCode]);
-// console.log(mapDataBrazil);
-
-// let objetoBrazil = JSON.stringify(mapDataBrazil);
-// console.log(objetoBrazil)
-// function indicatorsTranslate() {
-
-//     let getBR = WORLDBANK.BRA["indicators"];
-//     console.log(getBR)
-
-
-//     let mapDataBrazil = getBR.filter(({
-//         countryCode, countryName, data, indicatorCode, indicatorName,
-//     }) => [`${countryName} ${data} ${indicatorName} `, countryCode - indicatorCode]);
-//     console.log(mapDataBrazil);
-
-//     let teste1 = mapDataBrazil[100]["indicatorName"];
-//     let intermediateTraining = document.querySelector("#intermediateTraining");
-//     if (intermediateTraining) {
-//         let intermediateTrainingTranslate = teste1;
-//     }
-//     let indicators = document.querySelector("#resultIndicators");
-//     indicators.innerHTML = teste1
-
-
-// }
-// indicatorsTranslate();
-
-// console.log(indicatorsTranslate());
-
-// let mapDataBrazil = getBR.filter(({
-//         countryCode, countryName, data, indicatorCode, indicatorName,
-//     }) => [`${countryName} ${data} ${indicatorName} `, countryCode - indicatorCode]);
-//     console.log(mapDataBrazil);
-
-// let one = document.querySelector(".option-one-indicator");
-// let teste1 = mapDataBrazil[100]["indicatorName"];
-// let t = one = teste1 = "Força de trabalho com o ensino primário (% do total)";
-// console.log("indicatorName", t)
-
-// let teste2 = mapDataBrazil[101]["indicatorName"];
-// let teste3 = mapDataBrazil[102]["indicatorName"];
-
-// console.log(teste1, teste2, teste3)
-
-
-
-
-// let arrBr = mapDataBrazil.map(({ data, }) => [`${ data } `]);
-// console.log(arrBr)
-
-// let Brazil = JSON.parse(arrBr);
-// console.log(objetoBrazil)
-
-// let showElementsTab = (e) => {
-//     let tabSelect = e.target.dataset.tabenable;
-//     let jobBr = document.querySelector("#jobBr");
-//     let unemployedBr = document.querySelector("#unemployedBr");
-//     let educationBr = document.querySelector("#educationBr");
-
-//     if (tabSelect === "tabJob") {
-//         jobBr.style.display = "block";
-//         unemployedBr.style.display = "none";
-//         educationBr.style.display = "none";
-//     } else if (tabSelect === "tabUnemployed") {
-//         jobBr.style.display = "none";
-//         unemployedBr.style.display = "block";
-//         educationBr.style.display = "none";
-//     } else if (tabSelect === "tabEducation") {
-//         jobBr.style.display = "none";
-//         unemployedBr.style.display = "none";
-//         educationBr.style.display = "block";
-//     }
-// }
-
-// let tagsBr = () => {
-//     let jobBr = document.querySelector("#jobBr");
-//     let unemployedBr = document.querySelector("#unemployedBr");
-//     let educationBr = document.querySelector("#educationBr");
-
-//     jobBr.style.display = "none";
-//     unemployedBr.style.display = "none";
-//     educationBr.style.display = "none";
-
-//     let elementsTab = document.querySelectorAll(".tab");
-//     for (let i in elementsTab) {
-//         elementsTab[i].addEventListener("click", showElementsTab)
-//     }
-// };
-
-// tagsBr();
+let filterAlert = () => {
+    alert("Click na legenda dos gráficos para filtrar os dados")
+};
+let graphicAlert = document.querySelector("#graphicNav");
+graphicAlert.addEventListener("click", filterAlert);
 
 let ctxBRA = document.getElementById("myChartBRA");
 let ctxCHL = document.getElementById("myChartCHL");
@@ -263,6 +99,14 @@ myChart = new Chart(ctxBRA, {
             text: "Brasil",
             fontSize: 20
         },
+        legend: {
+            position: "right",
+            labels: {
+                fontSize: 15,
+                boxWidth: 20,
+            }
+        }
+        ,
         scales: {
             xAxes: [{
                 stacked: false
@@ -357,6 +201,14 @@ myChart = new Chart(ctxCHL, {
             text: "Chile",
             fontSize: 20
         },
+        legend: {
+            position: "right",
+            labels: {
+                fontSize: 15,
+                boxWidth: 20
+            }
+        }
+        ,
         scales: {
             xAxes: [{
                 stacked: false
@@ -444,6 +296,13 @@ myChart = new Chart(ctxMEX, {
             display: true,
             text: "México",
             fontSize: 20
+        },
+        legend: {
+            position: "right",
+            labels: {
+                fontSize: 15,
+                boxWidth: 20
+            }
         }
         ,
         scales: {
@@ -534,6 +393,13 @@ myChart = new Chart(ctxPER, {
             display: true,
             text: "Perú",
             fontSize: 20
+        },
+        legend: {
+            position: "right",
+            labels: {
+                fontSize: 15,
+                boxWidth: 20
+            }
         }
         ,
         scales: {
