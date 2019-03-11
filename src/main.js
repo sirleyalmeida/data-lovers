@@ -15,6 +15,18 @@ let filterAlert = () => {
 let graphicAlert = document.querySelector("#graphicNav");
 graphicAlert.addEventListener("click", filterAlert);
 
+let getBR = WORLDBANK.BRA["indicators"];
+//     console.log(getBR)
+let mapDataBrazil = getBR.filter(({
+    countryCode, countryName, data, indicatorCode, indicatorName,
+}) => [`${countryName} ${data} ${indicatorName} `, countryCode - indicatorCode]);
+console.log(mapDataBrazil);
+
+let teste2 = mapDataBrazil[101]["indicatorName"];
+let teste3 = mapDataBrazil[102]["indicatorName"];
+
+console.log(teste2, teste3)
+
 let ctxBRA = document.getElementById("myChartBRA");
 let ctxCHL = document.getElementById("myChartCHL");
 let ctxMEX = document.getElementById("myChartMEX");
