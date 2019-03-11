@@ -10,9 +10,6 @@
   <link rel="stylesheet" href="style.css" />
   <script type="text/javascript" src="data/worldbank/worldbank.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
-  <!-- <script type="text/javascript" src="calc.js"></script>
-  <script type="text/javascript" src="utils.js"></script>
-  <script type="text/javascript" src="dataWorkForce.js"></script> -->
 </head>
 
 <body>
@@ -24,7 +21,7 @@
         <li class="item-nav-right"><a href="#paises">Países</a></li>
         <li class="item-nav-right"><a href="#introducao">Introdução</a></li>
         <li class="item-nav-right"><a href="#indicadores">Pesquisar</a></li>
-        <li class="item-nav-right"><a href="#graficos">Gráficos</a></li>
+        <li class="item-nav-right"><a href="#graficos" id="graphicNav">Gráficos</a></li>
       </ul>
     </nav>
   </header>
@@ -38,13 +35,11 @@
   </section>
   <section class="container-maps">
     <div class="list-map">
-      <!-- <h1>Índices de empregabilidade das mulheres em relação a diferentes níveis de escolaridade no Brasil, Chile,
-          Perú e México </h1> -->
       <ul>
-        <li class="mexico"><i class="fas fa-map-marker-alt">México</i></li>
-        <li class="brazil"><i class="fas fa-map-marker-alt">Brasil</i></li>
-        <li class="peru"><i class="fas fa-map-marker-alt">Perú</i></li>
-        <li class="chile"><i class="fas fa-map-marker-alt">Chile</i></li>
+        <li class="mexico"><a href="#scrollMyChartMEX"><i class="fas fa-map-marker-alt">México</i></a></li>
+        <li class="brazil"><a href="#scrollMyChartBRA"><i class="fas fa-map-marker-alt">Brasil</i></a></li>
+        <li class="peru"><a href="#scrollMyChartPER"><i class="fas fa-map-marker-alt">Perú</i></a></li>
+        <li class="chile"><a href="#scrollMyChartCHL"><i class="fas fa-map-marker-alt">Chile</i></a></li>
       </ul>
       <div class="container-symbols">
         <div class="symbol">
@@ -161,37 +156,29 @@
       <div class="post-indicators">
         <p class="post-indicators-countries" id="resultIndicators"></p>
       </div>
-      <!-- <div class="row">
-        <div class="column-text">
-        </div>
-        <div class="column-text">
-        </div>
-      </div> -->
     </div>
   </section>
   <!--- aqui irei colocar os graficos--->
   <section id="graficos" class="text-center background-grey">
     <div id="mainSection" class="container-comparative">
       <h2 class="text-uppercase">Gráficos</h2>
-      <div class="div-graphics">
+      <div class="div-graphics" id="scrollMyChartBRA">
         <canvas id="myChartBRA" class="myChart"></canvas>
       </div>
-      <div>
+      <div class="div-graphics" id="scrollMyChartCHL">
         <canvas id="myChartCHL" class="myChart"></canvas>
       </div>
-      <div>
+      <div class="div-graphics" id="scrollMyChartMEX">
         <canvas id="myChartMEX" class="myChart"></canvas>
       </div>
-      <div>
+      <div class="div-graphics" id="scrollMyChartPER">
         <canvas id="myChartPER" class="myChart"></canvas>
       </div>
-      
     </div>
   </section>
 
   <footer>
   </footer>
-  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script> -->
   <script type="text/javascript" src="calc.js"></script>
   <script type="text/javascript" src="utils.js"></script>
   <script type="text/javascript" src="dataWorkForce.js"></script>
