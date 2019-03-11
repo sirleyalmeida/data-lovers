@@ -181,8 +181,8 @@
 
 let ctxBRA = document.getElementById("myChartBRA");
 let ctxCHL = document.getElementById("myChartCHL");
-let ctxPER = document.getElementById("myChartPER");
 let ctxMEX = document.getElementById("myChartMEX");
+let ctxPER = document.getElementById("myChartPER");
 let datas = itens;
 let myChart;
 
@@ -258,6 +258,11 @@ myChart = new Chart(ctxBRA, {
         ]
     },
     options: {
+        title: {
+            display: true,
+            text: "Brasil",
+            fontSize: 20
+        },
         scales: {
             xAxes: [{
                 stacked: false
@@ -347,6 +352,11 @@ myChart = new Chart(ctxCHL, {
         ]
     },
     options: {
+        title: {
+            display: true,
+            text: "Chile",
+            fontSize: 20
+        },
         scales: {
             xAxes: [{
                 stacked: false
@@ -358,7 +368,7 @@ myChart = new Chart(ctxCHL, {
     }
 });
 
-myChart = new Chart(ctxPER, {
+myChart = new Chart(ctxMEX, {
     type: 'bar',
     data: {
         labels: datas[18].labels,
@@ -430,6 +440,12 @@ myChart = new Chart(ctxPER, {
         ]
     },
     options: {
+        title: {
+            display: true,
+            text: "México",
+            fontSize: 20
+        }
+        ,
         scales: {
             xAxes: [{
                 stacked: false
@@ -442,7 +458,7 @@ myChart = new Chart(ctxPER, {
 });
 
 
-myChart = new Chart(ctxMEX, {
+myChart = new Chart(ctxPER, {
     type: 'bar',
     data: {
         labels: datas[27].labels,
@@ -514,6 +530,12 @@ myChart = new Chart(ctxMEX, {
         ]
     },
     options: {
+        title: {
+            display: true,
+            text: "Perú",
+            fontSize: 20
+        }
+        ,
         scales: {
             xAxes: [{
                 stacked: false

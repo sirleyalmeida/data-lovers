@@ -3,8 +3,8 @@ let objUtils = Countries;
 const objIndicator = Indicator;
 const itens = [];
 let obj = new Object();
-let aux1 = [];
-let aux2 = [];
+let arrValue = [];
+let arrLabel = [];
 let decada = [];
 
 objUtils.forEach(country => {
@@ -14,8 +14,8 @@ objUtils.forEach(country => {
 
             if ((indicators.indicatorCode == item.code)) {
                 obj = new Object();
-                aux1 = [];
-                aux2 = [];
+                arrLabel = [];
+                arrValue = [];
                 decada = [];
                 obj.country = country.name;
                 obj.labels = Object.keys(indicators.data);
@@ -29,24 +29,16 @@ objUtils.forEach(country => {
                         decada.push(obj.values[i]);
                     }
                     if ((obj.labels[i] >= "2015" && obj.labels[i] <= "2017") && obj.values[i] != "") {
-                        aux1.push(obj.labels[i]);
-                        aux2.push(Math.round(obj.values[i], 2));
+                        arrLabel.push(obj.labels[i]);
+                        arrValue.push(Math.round(obj.values[i], 2));
                     }
                 }
-                aux1.unshift("2000-2014");
-                aux2.unshift(calculadora.calcMedia(decada));
-                obj.labels = aux1;
-                obj.values = aux2;
-                //let media = calculadora.calcMedia(decada);
-                //console.log(decada);
+                arrLabel.unshift("2000-2014");
+                arrValue.unshift(calculadora.calcMedia(decada));
+                obj.labels = arrLabel;
+                obj.values = arrValue;
                 itens.push(obj);
             }
         }
     })
 });
-
-
-
-
-
-console.log(itens);

@@ -11,17 +11,18 @@ const Countries = [{
     backgroundColor: 'rgba(54, 162, 235, 0.2)'
 },
 {
-    code: "PER",
-    name: "Peru",
-    borderColor: 'rgba(255, 0, 0, 1)',
-    backgroundColor: 'rgba(255, 0, 0, 0.2)'
-},
-{
     code: "MEX",
     name: "Mexico",
     borderColor: 'rgba(70, 233, 51, 1)',
     backgroundColor: 'rgba(70, 233, 51, 0.2)'
+},
+{
+    code: "PER",
+    name: "Peru",
+    borderColor: 'rgba(255, 0, 0, 1)',
+    backgroundColor: 'rgba(255, 0, 0, 0.2)'
 }
+
 ];
 
 
