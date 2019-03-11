@@ -8,6 +8,11 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
     integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css" />
+  <script type="text/javascript" src="data/worldbank/worldbank.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script>
+  <!-- <script type="text/javascript" src="calc.js"></script>
+  <script type="text/javascript" src="utils.js"></script>
+  <script type="text/javascript" src="dataWorkForce.js"></script> -->
 </head>
 
 <body>
@@ -98,46 +103,53 @@
         <caption>Escolha o País, o Ano e o Indicador</caption>
         <tr>
           <td>
-            <select>
-              <option>País</option>
-              <option>México</option>
-              <option>Brasil</option>
-              <option>Perú</option>
-              <option>Chile</option>
+            <select required="">
+              <option value="" selected="" disabled="">País</option>
+              <option id="country">México</option>
+              <option id="country">Brasil</option>
+              <option id="country">Perú</option>
+              <option id="country">Chile</option>
             </select>
           </td>
           <td>
-            <select>
-              <option>Ano</option>
-              <option>2008</option>
-              <option>2009</option>
-              <option>2010</option>
-              <option>2011</option>
-              <option>2012</option>
-              <option>2013</option>
-              <option>2014</option>
-              <option>2015</option>
-              <option>2016</option>
-              <option>2017</option>
+            <select required="">
+              <option value="" selected="" disabled="">Ano</option>
+              <option id="year">2008</option>
+              <option id="year">2009</option>
+              <option id="year">2010</option>
+              <option id="year">2011</option>
+              <option id="year">2012</option>
+              <option id="year">2013</option>
+              <option id="year">2014</option>
+              <option id="year">2015</option>
+              <option id="year">2016</option>
+              <option id="year">2017</option>
             </select>
           </td>
           <td>
-            <select>
-              <option>Indicador</option>
-              <option>Força de trabalho com o ensino primário (% do total)</option>
-              <option>Força de trabalho com o ensino primário, do sexo feminino (% da força de trabalho feminina)
+            <select required="">
+              <option value="" selected="" disabled="">Indicador</option>
+              <option id="indicator" class="option-one-indicator">Força de trabalho com o ensino primário (% do total)
               </option>
-              <option>Força de trabalho com o ensino primário, do sexo masculino (% da força de trabalho masculina)
+              <option id="indicator">Força de trabalho com o ensino primário, do sexo feminino (% da força de trabalho
+                feminina)
               </option>
-              <option>Força de trabalho com formação intermédia (% do total)</option>
-              <option>Força de trabalho com formação intermédia, do sexo feminino (% da força de trabalho feminina)
+              <option id="indicator">Força de trabalho com o ensino primário, do sexo masculino (% da força de trabalho
+                masculina)
               </option>
-              <option>Força de trabalho com formação intermediária, do sexo masculino (% da força de trabalho
+              <option id="indicator">Força de trabalho com formação intermédia (% do total)</option>
+              <option id="indicator">Força de trabalho com formação intermédia, do sexo feminino (% da força de trabalho
+                feminina)
+              </option>
+              <option id="indicator">Força de trabalho com formação intermediária, do sexo masculino (% da força de
+                trabalho
                 masculina)</option>
-              <option>Força de trabalho com formação avançada (% do total)</option>
-              <option>Força de trabalho com formação avançada, do sexo feminino (% da força de trabalho feminina)
+              <option id="indicator">Força de trabalho com formação avançada (% do total)</option>
+              <option id="indicator">Força de trabalho com formação avançada, do sexo feminino (% da força de trabalho
+                feminina)
               </option>
-              <option>Força de trabalho com formação avançada, do sexo masculino (% da força de trabalho masculina)
+              <option id="indicator">Força de trabalho com formação avançada, do sexo masculino (% da força de trabalho
+                masculina)
               </option>
             </select>
           </td>
@@ -147,7 +159,7 @@
         </tr>
       </table>
       <div class="post-indicators">
-        <p class="" id="resultIndicators"></p>
+        <p class="post-indicators-countries" id="resultIndicators"></p>
       </div>
       <!-- <div class="row">
         <div class="column-text">
@@ -161,35 +173,29 @@
   <section id="comparativos" class="text-center background-grey">
     <div id="mainSection" class="container-comparative">
       <h2 class="text-uppercase">Comparativos</h2>
-      <div class="row">
-        <div class="column-text">
-          <p>
-            <!-- As desigualdades no mercado de trabalho sempre foram encontradas em países de vários níveis de
-            desenvolvimento, mesmo nos mais avançados, tanto em relação a escolaridade quanto ao sexo. As diferenças
-            marcantes na natureza das desigualdades entre os países demonstram que essas disparidades não são apenas
-            determinadas por forças econômicas, mas também por força de políticas públicas.
-            As informações apresentadas, a seguir, compõem um estudo sobre empregabilidade entre homens e mulheres sobre
-            diferentes níveis de escolaridades no Brasil, Chile, Perú e México. -->
-          </p>
-        </div>
-        <div class="column-text">
-          <p>
-            <!-- As desigualdades no mercado de trabalho sempre foram encontradas em países de vários níveis de
-            desenvolvimento, mesmo nos mais avançados, tanto em relação a escolaridade quanto ao sexo. As diferenças
-            marcantes na natureza das desigualdades entre os países demonstram que essas disparidades não são apenas
-            determinadas por forças econômicas, mas também por força de políticas públicas.
-            As informações apresentadas, a seguir, compõem um estudo sobre empregabilidade entre homens e mulheres sobre
-            diferentes níveis de escolaridades no Brasil, Chile, Perú e México.           -->
-          </p>
 
-        </div>
-      </div>
+      <canvas id="myChartBRA" class="myChart"></canvas>
+      <br>
+
+      <canvas id="myChartCHL" class="myChart"></canvas>
+      <br>
+
+      <canvas id="myChartPER" class="myChart"></canvas>
+      <br>
+
+      <canvas id="myChartMEX" class="myChart"></canvas>
+      <br>
+
     </div>
   </section>
 
   <footer>
   </footer>
-  <script src="./data/worldbank/worldbank.js"></script>
+  <!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.min.js"></script> -->
+  <script type="text/javascript" src="calc.js"></script>
+  <script type="text/javascript" src="utils.js"></script>
+  <script type="text/javascript" src="dataWorkForce.js"></script>
+  <!-- <script src="./data/worldbank/worldbank.js"></script> -->
   <script src="main.js"></script>
 </body>
 
