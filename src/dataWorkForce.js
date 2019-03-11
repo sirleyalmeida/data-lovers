@@ -59,7 +59,7 @@ objUtils.forEach(country => {
                 arrList = [];
                 filterindicators = [];
                 obj.country = country.name;
-                obj.labels = Object.keys(indicators.data);
+                //obj.labels = Object.keys(indicators.data);
                 // obj.values = Object.values(indicators.data);
                 obj.indicadorName = item.name;
                 console.log(obj);

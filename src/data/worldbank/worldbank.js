@@ -31762,7 +31762,7 @@ const WORLDBANK = {
         },
         "countryName": "Chile",
         "countryCode": "CHL",
-        "indicatorName": "Total de inscripciones, nivel primario, mujeres (% neto)",
+        "indicatorName": "Total de inslet datas = filterItens;cripciones, nivel primario, mujeres (% neto)",
         "indicatorCode": "SE.PRM.TENR.FE"
       },
       {

@@ -40,7 +40,7 @@ const Indicator = [{
 },
 {
     code: "SL.TLF.BASC.ZS",
-    name: "% total com o ensino primário",
+    name: "% total com o ensino primário"data,
     borderColor: 'rgba(0, 0, 255)',
     backgroundColor: 'rgba(0, 0, 255, 0.2)'
 },
