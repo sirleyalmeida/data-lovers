@@ -23,7 +23,7 @@ let datas = itens;
 let myChart;
 
 let search = () => {
-
+    let resultSearch = document.querySelector("#resultIndicators");
     let selectCountry = document.getElementById("selectCountry");
     let itemSelectCountry = selectCountry.options[selectCountry.selectedIndex].value;
 
@@ -38,13 +38,13 @@ let search = () => {
         if (x.indicadorName === itemSelectIndicator && x.country === itemSelectCountry) {
             for (let i in x.allYears) {
                 if (x.allYears[i] == itemSelectYear) {
-
-                    console.log("ok2");
-                    console.log(x.allResult[i]);
+                    let resultPush = Math.round(x.allResult[i]);
+                    return document.querySelector("#resultIndicators").innerHTML = resultPush + "%";
                 }
             }
         }
     }
+
 }
 let btnSearch = document.querySelector(".btn-indicators");
 btnSearch.addEventListener('click', search);
