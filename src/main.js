@@ -35,7 +35,7 @@ let search = () => {
 
     for (let x of datas) {
 
-        if (x.indicadorName === itemSelectIndicator && x.country === itemSelectCountry) {
+        if (x.indicatorName === itemSelectIndicator && x.country === itemSelectCountry) {
             for (let i in x.allYears) {
                 if (x.allYears[i] == itemSelectYear) {
                     let resultPush = Math.round(x.allResult[i]);
@@ -45,7 +45,7 @@ let search = () => {
         }
     }
 
-}
+};
 let btnSearch = document.querySelector(".btn-indicators");
 btnSearch.addEventListener('click', search);
 
@@ -55,7 +55,7 @@ myChart = new Chart(ctxBRA, {
         labels: datas[0].labels,
         datasets: [{
             type: 'line',
-            label: datas[0].indicadorName,
+            label: datas[0].indicatorName,
             data: datas[0].values,
             backgroundColor: datas[0].backgroundColor,
             borderColor: datas[0].borderColor,
@@ -63,56 +63,56 @@ myChart = new Chart(ctxBRA, {
         },
         {
             type: 'line',
-            label: datas[1].indicadorName,
+            label: datas[1].indicatorName,
             data: datas[1].values,
             backgroundColor: datas[1].backgroundColor,
             borderColor: datas[1].borderColor,
             borderWidth: 2
         }, {
             type: 'line',
-            label: datas[2].indicadorName,
+            label: datas[2].indicatorName,
             data: datas[2].values,
             backgroundColor: datas[2].backgroundColor,
             borderColor: datas[2].borderColor,
             borderWidth: 2
         },
         {
-            label: datas[3].indicadorName,
+            label: datas[3].indicatorName,
             data: datas[3].values,
             backgroundColor: datas[3].backgroundColor,
             borderColor: datas[3].borderColor,
             borderWidth: 2
         },
         {
-            label: datas[4].indicadorName,
+            label: datas[4].indicatorName,
             data: datas[4].values,
             backgroundColor: datas[4].backgroundColor,
             borderColor: datas[4].borderColor,
             borderWidth: 2
         },
         {
-            label: datas[5].indicadorName,
+            label: datas[5].indicatorName,
             data: datas[5].values,
             backgroundColor: datas[5].backgroundColor,
             borderColor: datas[5].borderColor,
             borderWidth: 2
         },
         {
-            label: datas[6].indicadorName,
+            label: datas[6].indicatorName,
             data: datas[6].values,
             backgroundColor: datas[6].backgroundColor,
             borderColor: datas[6].borderColor,
             borderWidth: 2
         },
         {
-            label: datas[7].indicadorName,
+            label: datas[7].indicatorName,
             data: datas[7].values,
             backgroundColor: datas[7].backgroundColor,
             borderColor: datas[7].borderColor,
             borderWidth: 2
         },
         {
-            label: datas[8].indicadorName,
+            label: datas[8].indicatorName,
             data: datas[8].values,
             backgroundColor: datas[8].backgroundColor,
             borderColor: datas[8].borderColor,
@@ -157,7 +157,7 @@ myChart = new Chart(ctxCHL, {
         labels: datas[9].labels,
         datasets: [{
             type: 'line',
-            label: datas[9].indicadorName,
+            label: datas[9].indicatorName,
             data: datas[9].values,
             backgroundColor: datas[9].backgroundColor,
             borderColor: datas[9].borderColor,
@@ -165,56 +165,56 @@ myChart = new Chart(ctxCHL, {
         },
         {
             type: 'line',
-            label: datas[10].indicadorName,
+            label: datas[10].indicatorName,
             data: datas[10].values,
             backgroundColor: datas[10].backgroundColor,
             borderColor: datas[10].borderColor,
             borderWidth: 2
         }, {
             type: 'line',
-            label: datas[11].indicadorName,
+            label: datas[11].indicatorName,
             data: datas[11].values,
             backgroundColor: datas[11].backgroundColor,
             borderColor: datas[11].borderColor,
             borderWidth: 2
         },
         {
-            label: datas[12].indicadorName,
+            label: datas[12].indicatorName,
             data: datas[12].values,
             backgroundColor: datas[12].backgroundColor,
             borderColor: datas[12].borderColor,
             borderWidth: 2
         },
         {
-            label: datas[13].indicadorName,
+            label: datas[13].indicatorName,
             data: datas[13].values,
             backgroundColor: datas[13].backgroundColor,
             borderColor: datas[13].borderColor,
             borderWidth: 2
         },
         {
-            label: datas[14].indicadorName,
+            label: datas[14].indicatorName,
             data: datas[14].values,
             backgroundColor: datas[14].backgroundColor,
             borderColor: datas[14].borderColor,
             borderWidth: 2
         },
         {
-            label: datas[15].indicadorName,
+            label: datas[15].indicatorName,
             data: datas[15].values,
             backgroundColor: datas[15].backgroundColor,
             borderColor: datas[15].borderColor,
             borderWidth: 2
         },
         {
-            label: datas[16].indicadorName,
+            label: datas[16].indicatorName,
             data: datas[16].values,
             backgroundColor: datas[16].backgroundColor,
             borderColor: datas[16].borderColor,
             borderWidth: 2
         },
         {
-            label: datas[17].indicadorName,
+            label: datas[17].indicatorName,
             data: datas[17].values,
             backgroundColor: datas[17].backgroundColor,
             borderColor: datas[17].borderColor,
@@ -253,7 +253,7 @@ myChart = new Chart(ctxMEX, {
         labels: datas[18].labels,
         datasets: [{
             type: 'line',
-            label: datas[18].indicadorName,
+            label: datas[18].indicatorName,
             data: datas[18].values,
             backgroundColor: datas[18].backgroundColor,
             borderColor: datas[18].borderColor,
@@ -261,56 +261,56 @@ myChart = new Chart(ctxMEX, {
         },
         {
             type: 'line',
-            label: datas[19].indicadorName,
+            label: datas[19].indicatorName,
             data: datas[19].values,
             backgroundColor: datas[19].backgroundColor,
             borderColor: datas[19].borderColor,
             borderWidth: 2
         }, {
             type: 'line',
-            label: datas[20].indicadorName,
+            label: datas[20].indicatorName,
             data: datas[20].values,
             backgroundColor: datas[20].backgroundColor,
             borderColor: datas[20].borderColor,
             borderWidth: 2
         },
         {
-            label: datas[21].indicadorName,
+            label: datas[21].indicatorName,
             data: datas[21].values,
             backgroundColor: datas[21].backgroundColor,
             borderColor: datas[21].borderColor,
             borderWidth: 2
         },
         {
-            label: datas[22].indicadorName,
+            label: datas[22].indicatorName,
             data: datas[22].values,
             backgroundColor: datas[22].backgroundColor,
             borderColor: datas[22].borderColor,
             borderWidth: 2
         },
         {
-            label: datas[23].indicadorName,
+            label: datas[23].indicatorName,
             data: datas[23].values,
             backgroundColor: datas[23].backgroundColor,
             borderColor: datas[23].borderColor,
             borderWidth: 2
         },
         {
-            label: datas[24].indicadorName,
+            label: datas[24].indicatorName,
             data: datas[24].values,
             backgroundColor: datas[24].backgroundColor,
             borderColor: datas[24].borderColor,
             borderWidth: 2
         },
         {
-            label: datas[25].indicadorName,
+            label: datas[25].indicatorName,
             data: datas[25].values,
             backgroundColor: datas[25].backgroundColor,
             borderColor: datas[25].borderColor,
             borderWidth: 2
         },
         {
-            label: datas[26].indicadorName,
+            label: datas[26].indicatorName,
             data: datas[26].values,
             backgroundColor: datas[26].backgroundColor,
             borderColor: datas[26].borderColor,
@@ -350,7 +350,7 @@ myChart = new Chart(ctxPER, {
         labels: datas[27].labels,
         datasets: [{
             type: 'line',
-            label: datas[27].indicadorName,
+            label: datas[27].indicatorName,
             data: datas[27].values,
             backgroundColor: datas[27].backgroundColor,
             borderColor: datas[27].borderColor,
@@ -358,56 +358,56 @@ myChart = new Chart(ctxPER, {
         },
         {
             type: 'line',
-            label: datas[28].indicadorName,
+            label: datas[28].indicatorName,
             data: datas[28].values,
             backgroundColor: datas[28].backgroundColor,
             borderColor: datas[28].borderColor,
             borderWidth: 2
         }, {
             type: 'line',
-            label: datas[29].indicadorName,
+            label: datas[29].indicatorName,
             data: datas[29].values,
             backgroundColor: datas[29].backgroundColor,
             borderColor: datas[29].borderColor,
             borderWidth: 2
         },
         {
-            label: datas[30].indicadorName,
+            label: datas[30].indicatorName,
             data: datas[30].values,
             backgroundColor: datas[30].backgroundColor,
             borderColor: datas[30].borderColor,
             borderWidth: 2
         },
         {
-            label: datas[31].indicadorName,
+            label: datas[31].indicatorName,
             data: datas[31].values,
             backgroundColor: datas[31].backgroundColor,
             borderColor: datas[31].borderColor,
             borderWidth: 2
         },
         {
-            label: datas[32].indicadorName,
+            label: datas[32].indicatorName,
             data: datas[32].values,
             backgroundColor: datas[32].backgroundColor,
             borderColor: datas[32].borderColor,
             borderWidth: 2
         },
         {
-            label: datas[33].indicadorName,
+            label: datas[33].indicatorName,
             data: datas[33].values,
             backgroundColor: datas[33].backgroundColor,
             borderColor: datas[33].borderColor,
             borderWidth: 2
         },
         {
-            label: datas[34].indicadorName,
+            label: datas[34].indicatorName,
             data: datas[34].values,
             backgroundColor: datas[34].backgroundColor,
             borderColor: datas[34].borderColor,
             borderWidth: 2
         },
         {
-            label: datas[35].indicadorName,
+            label: datas[35].indicatorName,
             data: datas[35].values,
             backgroundColor: datas[35].backgroundColor,
             borderColor: datas[35].borderColor,

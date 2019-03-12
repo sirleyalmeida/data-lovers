@@ -5,7 +5,7 @@ const itens = [];
 let obj = new Object();
 let arrValue = [];
 let arrLabel = [];
-let decada = [];
+let decade = [];
 
 objUtils.forEach(country => {
 
@@ -16,11 +16,11 @@ objUtils.forEach(country => {
                 obj = new Object();
                 arrLabel = [];
                 arrValue = [];
-                decada = [];
+                decade = [];
                 obj.country = country.name;
                 obj.labels = Object.keys(indicators.data);
                 obj.values = Object.values(indicators.data);
-                obj.indicadorName = item.name;
+                obj.indicatorName = item.name;
                 obj.borderColor = item.borderColor;
                 obj.backgroundColor = item.backgroundColor;
                 obj.allYears = Object.keys(indicators.data);
@@ -28,7 +28,7 @@ objUtils.forEach(country => {
 
                 for (i in obj.labels) {
                     if ((obj.labels[i] >= "2000" && obj.labels[i] <= "2014")) {
-                        decada.push(obj.values[i]);
+                        decade.push(obj.values[i]);
                     }
                     if ((obj.labels[i] >= "2015" && obj.labels[i] <= "2017") && obj.values[i] != "") {
                         arrLabel.push(obj.labels[i]);
@@ -36,7 +36,7 @@ objUtils.forEach(country => {
                     }
                 }
                 arrLabel.unshift("2000-2014");
-                arrValue.unshift(calculadora.calcMedia(decada));
+                arrValue.unshift(calculator.calcMedia(decade));
                 obj.labels = arrLabel;
                 obj.values = arrValue;
                 itens.push(obj);

@@ -1,4 +1,4 @@
-const calculadora = function () {
+const calculator = function () {
     var calcMedia = function (arr) {
         let media = 0;
         let arrfiltered = arr.filter(function (value, index, arr) { return value != ""; });
