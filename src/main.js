@@ -15,19 +15,39 @@ let filterAlert = () => {
 let graphicAlert = document.querySelector("#graphicNav");
 graphicAlert.addEventListener("click", filterAlert);
 
-let getBR = WORLDBANK["BRA"].indicators;
-//     console.log(getBR)
-let mapDataBrazil = getBR.filter(elem => (elem.data["2017"]));
-console.log(mapDataBrazil);
-
-
-
 let ctxBRA = document.getElementById("myChartBRA");
 let ctxCHL = document.getElementById("myChartCHL");
 let ctxMEX = document.getElementById("myChartMEX");
 let ctxPER = document.getElementById("myChartPER");
 let datas = itens;
 let myChart;
+
+let search = () => {
+
+    let selectCountry = document.getElementById("selectCountry");
+    let itemSelectCountry = selectCountry.options[selectCountry.selectedIndex].value;
+
+    let selectYear = document.getElementById("selectYear");
+    let itemSelectYear = selectYear.options[selectYear.selectedIndex].value;
+
+    let SelectIndicator = document.getElementById("selectIndicator");
+    let itemSelectIndicator = SelectIndicator.options[SelectIndicator.selectedIndex].value;
+
+    for (let x of datas) {
+
+        if (x.indicadorName === itemSelectIndicator && x.country === itemSelectCountry) {
+            for (let i in x.allYears) {
+                if (x.allYears[i] == itemSelectYear) {
+
+                    console.log("ok2");
+                    console.log(x.allResult[i]);
+                }
+            }
+        }
+    }
+}
+let btnSearch = document.querySelector(".btn-indicators");
+btnSearch.addEventListener('click', search);
 
 myChart = new Chart(ctxBRA, {
     type: 'bar',

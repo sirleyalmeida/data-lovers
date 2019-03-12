@@ -8,8 +8,6 @@ body {
 }
 
 .background-grey{
-    /* border-top: 1px solid darkgray; */
-    /* border-bottom: 1px solid darkgray; */
     background-color:#f2f2f2;
 }
 
@@ -27,7 +25,7 @@ nav {
     margin: 0;
     margin-bottom: 3vw;
     display: flex;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     list-style: none;
     align-items: center;
     justify-content: space-evenly;
@@ -36,7 +34,6 @@ nav {
     left: 0;
     top: 0;
     width: 100%;
-    /* overflow: auto; */
     text-decoration: none;
 }
 
@@ -75,7 +72,7 @@ nav {
     width: 90vw;
     height: 70vh;
     margin: auto;
-    background-image: url("img-flags/mapa.png");
+    background-image: url("img/mapa.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center; 
@@ -83,8 +80,6 @@ nav {
     margin-bottom: 1%;
     display: flex;
     align-items: flex-end;
-    /* width: 1200px;
-    height: 400px; */
 }
 
 .list-map {
@@ -161,9 +156,6 @@ nav {
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    /* margin-top: 20px;
-    margin-right: 40px;
-    margin-left: 40px; */
 }
 
 .column-text p {
@@ -186,6 +178,10 @@ nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+.container-indicator table caption {
+    width: 100%;
 }
 
 .container-indicator select {
@@ -216,7 +212,7 @@ nav {
    height: 100px;   
 }
 
-.container-comparative {
+.container-graphics {
     text-align: center;
     padding: 2% 5%;
 }
@@ -225,4 +221,3 @@ nav {
     padding-bottom: 5%;
 
 }
-

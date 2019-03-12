@@ -23,6 +23,8 @@ objUtils.forEach(country => {
                 obj.indicadorName = item.name;
                 obj.borderColor = item.borderColor;
                 obj.backgroundColor = item.backgroundColor;
+                obj.allYears = Object.keys(indicators.data);
+                obj.allResult = Object.values(indicators.data);
 
                 for (i in obj.labels) {
                     if ((obj.labels[i] >= "2000" && obj.labels[i] <= "2014")) {
