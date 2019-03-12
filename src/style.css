@@ -72,7 +72,7 @@ nav {
     width: 90vw;
     height: 70vh;
     margin: auto;
-    background-image: url("src/img/mapa.png");
+    background-image: url("img/mapa.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center; 
@@ -86,7 +86,6 @@ nav {
     display: flex;
     align-items: center;
     padding-left: 20%;
-  
 }
 
 .list-map ul {
@@ -219,5 +218,4 @@ nav {
 
 .div-graphics {
     padding-bottom: 5%;
-
 }
