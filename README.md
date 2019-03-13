@@ -1,8 +1,8 @@
 # Data Lovers
 
-Para começar o projeto data-lovers, começamos pelo planejamento do Sprint 1, através do uso do [Trello](https://trello.com/invite/b/Tdum0bgj/bddbb37c49114b3d5656c6d1e916a41a/data-lovers) organizamos o planejamento inicial com datas limites de conclusão de cada elemento a se fazer, dentre eles: delimitação do tema, o perfil do usuário, o fluxograma, o prótotipo e o teste de usabilidade do protótipo. Depois dessas etapas concluídas, começamos a implementar a interface e codar.
+Iniciamos o projeto data-lovers pelo planejamento do Sprint 1, através do uso do [Trello](https://trello.com/invite/b/Tdum0bgj/bddbb37c49114b3d5656c6d1e916a41a/data-lovers) organizamos o planejamento inicial com datas limites de conclusão de cada elemento a se fazer, dentre eles: delimitação do tema, o perfil do usuário, o fluxograma, o prótotipo e o teste de usabilidade do protótipo. Depois dessas etapas concluídas, começamos a implementar a interface e codar.
 
-As dicas perguntas abaixo ao iniciar o projeto ajudaram bastante:
+As dicas das nas perguntas abaixo ao iniciar o projeto ajudaram bastante:
 * Quem são os principais usuários de seu produto?
 * Quais são os objetivos de seu usuário com relação ao seu produto?
 * Quais os dados mais importantes que eles querem ver em sua interface?
@@ -14,13 +14,13 @@ O tema escolhido foi:
 Indicadores de desenvolvimento do Banco Mundial de alguns países (Brasil, Chile, México e Peru). Estes dados incluim indicadores demográficos, econômicos e comerciais.
 
 Fizemos dois Usuários com os seguintes perfis:
-* Karina
+* Karina:
 Profissão: CEO de uma Empresa Multinacional;
 Idade: 35 anos;
 Mora na Argetina;
 Características: Focada, busca informações online diversas, nível intermediário em computação, gosta de ler;
 Necessidades: Informações de dados sobre emprego e educação na América Latina, principalmente no Brasil, Chile, Perú e México;
-* Nestor
+* Nestor:
 Profissão: Investidor;
 Idade: 42 anos;
 Mora na Itália;
@@ -29,7 +29,6 @@ Necessidades: de sites com informações específicas de quatro países (Brasil,
 
 #### Fluxograma
 
-![alt text](https://github.com/sirleyalmeida/data-lovers/blob/master/Fluxograma%20Data-Lovers.png)"Fluxograma"
 [Fluxograma](/Fluxograma%20Data-Lovers.pdf)
 
 #### Protótipo
@@ -47,16 +46,3 @@ A interface final permite:
 2. Exibe uma breve explicação dos países e indicadores encontrados;
 3. Permite pesquisar por ano, país e indicador o dado filtrado desse cruzamento;
 4. Exibe gráfico por país em que é possível filtrar as informações e comparar graficamente.
-
-## Checklist
-
-* [X] Usar VanillaJS.
-* [X] Inclui _Definição de produto_ clara e informativa no `README.md`.
-* [X] Inclui esboço da solução (protótipo de baixa fidelidade e de alta fidelidade, se houver) no
-  `README.md`.
-* [X] Inclui a lista de problema detectados através dos testes de usabilidade
-  no `README.md`.
-* [X] UI: Mostra lista e/ou tabela com dados e/ou indicadores.
-* [X] UI: Permite ordenar os dados por meio de um ou mais campos
-  (asc e desc).
-* [X] UI: Permite filtrar os dados com base em uma condição.
