@@ -39,7 +39,7 @@ let search = () => {
             for (let i in x.allYears) {
                 if (x.allYears[i] == itemSelectYear) {
                     let resultPush = Math.round(x.allResult[i]);
-                    return document.querySelector("#resultIndicators").innerHTML = resultPush + "%";
+                    return document.querySelector("#resultIndicators").innerHTML = "O índice pesquidado é: " + resultPush + "%";
                 }
             }
         }
